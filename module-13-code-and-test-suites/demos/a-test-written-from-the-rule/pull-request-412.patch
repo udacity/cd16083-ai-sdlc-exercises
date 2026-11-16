@@ -1,0 +1,88 @@
+From 18764e8b66d4850e0932577cebfa06669873b3cf Mon Sep 17 00:00:00 2001
+From: Ledgerline <demo@ledgerline.example>
+Date: Tue, 3 Nov 2026 18:27:52 -0800
+Subject: [PATCH] Add late fee for overdue invoices (#412)
+
+---
+ invoice_email.py |  3 +++
+ late_fee.py      | 14 ++++++++++++++
+ requirements.txt |  1 +
+ test_late_fee.py | 23 +++++++++++++++++++++++
+ 4 files changed, 41 insertions(+)
+ create mode 100644 late_fee.py
+ create mode 100644 test_late_fee.py
+
+diff --git a/invoice_email.py b/invoice_email.py
+index d57e9c4..87edf71 100644
+--- a/invoice_email.py
++++ b/invoice_email.py
+@@ -1,7 +1,10 @@
++from late_fee import late_fee
+ def reminder_body(customer, invoice, today):
++    fee = late_fee(invoice["balance"], invoice["due_date"], today)
+     lines = [
+         f"Hi {customer},",
+         f"Invoice {invoice['id']} for ${invoice['balance']:.2f} was due on {invoice['due_date']}.",
+     ]
++    lines.append(f"A late fee of ${fee:.2f} has been added.")
+     lines.append("Thank you, Ledgerline")
+     return "\n".join(lines)
+diff --git a/late_fee.py b/late_fee.py
+new file mode 100644
+index 0000000..614572f
+--- /dev/null
++++ b/late_fee.py
+@@ -0,0 +1,14 @@
++from dateutil import parser
++
++
++def late_fee(balance, due_date, today):
++    due = parser.parse(due_date).date()
++    days_overdue = (today - due).days
++    if days_overdue >= 30:
++        fee = balance * 0.015
++        if fee < 5:
++            fee = 5
++        if fee > 25:
++            fee = 25
++        return round(fee, 2)
++    return 0.0
+diff --git a/requirements.txt b/requirements.txt
+index e079f8a..d306038 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -1 +1,2 @@
+ pytest
++python-dateutil
+diff --git a/test_late_fee.py b/test_late_fee.py
+new file mode 100644
+index 0000000..9bcddc6
+--- /dev/null
++++ b/test_late_fee.py
+@@ -0,0 +1,23 @@
++from datetime import date
++
++from late_fee import late_fee
++
++
++def test_no_fee_under_30_days():
++    # due September 20, checked September 30: 10 days overdue
++    assert late_fee(1000.00, "2026-09-20", date(2026, 9, 30)) == 0.0
++
++
++def test_fee_at_30_days():
++    # due September 1, checked October 1: 30 days overdue
++    assert late_fee(1000.00, "2026-09-01", date(2026, 10, 1)) == 15.00
++
++
++def test_minimum_fee():
++    # due August 1, checked September 15: 45 days overdue, 1.5% of $200 is $3
++    assert late_fee(200.00, "2026-08-01", date(2026, 9, 15)) == 5.00
++
++
++def test_returns_number():
++    # due August 1, checked October 1: 61 days overdue
++    assert isinstance(late_fee(500.00, "2026-08-01", date(2026, 10, 1)), float)
+-- 
+2.43.0
+
