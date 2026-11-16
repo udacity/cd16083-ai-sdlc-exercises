@@ -8,12 +8,12 @@ One folder per implementation module. Each module folder has:
 
 | Module | Folder | Exercise |
 |---|---|---|
-| Apply the Four Guiding Principles to AI-Assisted Workflows | `four-guiding-principles/` | Map the team's week and direct the release checklist |
-| Apply AI Oversight in Planning | `ai-oversight-in-planning/` | Score a supplied plan and estimate |
-| Evaluate AI-Generated Requirements Artifacts | `requirements-artifacts/` | Score the clinic's user stories, then direct your own |
-| Evaluate AI-Generated Design Artifacts | `design-artifacts/` | Score the vendor's sketch, direct your own, and decide between two |
-| Evaluate AI-Generated Code and Test Suites | `code-and-test-suites/` | Review pull request #412 |
-| Apply Responsible Use Across Deployment and Maintenance | `deployment-and-maintenance/` | A late fee charged a day early |
+| Apply the Four Guiding Principles to AI-Assisted Workflows | `module-3-four-guiding-principles/` | Map the team's week and direct the release checklist |
+| Apply AI Oversight in Planning | `module-6-ai-oversight-in-planning/` | Score a supplied plan and estimate |
+| Evaluate AI-Generated Requirements Artifacts | `module-8-requirements-artifacts/` | Score the clinic's user stories, then direct your own |
+| Evaluate AI-Generated Design Artifacts | `module-10-design-artifacts/` | Score the vendor's sketch, direct your own, and decide between two |
+| Evaluate AI-Generated Code and Test Suites | `module-13-code-and-test-suites/` | Review pull request #412 |
+| Apply Responsible Use Across Deployment and Maintenance | `module-15-deployment-and-maintenance/` | A late fee charged a day early |
 
 The exercises reuse the lab materials from the instructor-led course AIC-1001: Alder Box (Lab 1), Cedar Clinic (Lab 2) and Ledgerline (Lab 3). The instructor answer keys are not included here.
 
