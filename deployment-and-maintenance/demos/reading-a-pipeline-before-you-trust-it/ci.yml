@@ -1,0 +1,23 @@
+name: billing-service
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -r requirements.txt
+      - run: pytest
+        continue-on-error: true
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    env:
+      DEPLOY_API_KEY: "sk-live-PLACEHOLDER-not-a-real-key"
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./deploy.sh production

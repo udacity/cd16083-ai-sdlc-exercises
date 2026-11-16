@@ -1,3 +1,24 @@
+# Introduction to AI-SDLC: demo and exercise files
+
+One folder per implementation module. Each module folder has:
+
+- `demos/`: the files shown in the module's two demo videos, a `README.md` describing them, and `demo-prompts.md` with every prompt pasted into Claude Code
+- `<exercise>-starter/`: the exercise's `INSTRUCTIONS.md` and starter files
+- `solution/`: the completed solution files
+
+| Module | Folder | Exercise |
+|---|---|---|
+| Apply the Four Guiding Principles to AI-Assisted Workflows | `four-guiding-principles/` | Map the team's week and direct the release checklist |
+| Apply AI Oversight in Planning | `ai-oversight-in-planning/` | Score a supplied plan and estimate |
+| Evaluate AI-Generated Requirements Artifacts | `requirements-artifacts/` | Score the clinic's user stories, then direct your own |
+| Evaluate AI-Generated Design Artifacts | `design-artifacts/` | Score the vendor's sketch, direct your own, and decide between two |
+| Evaluate AI-Generated Code and Test Suites | `code-and-test-suites/` | Review pull request #412 |
+| Apply Responsible Use Across Deployment and Maintenance | `deployment-and-maintenance/` | A late fee charged a day early |
+
+The exercises reuse the lab materials from the instructor-led course AIC-1001: Alder Box (Lab 1), Cedar Clinic (Lab 2) and Ledgerline (Lab 3). The instructor answer keys are not included here.
+
+---
+
 # Purpose of This Repo
 
 This repo is the source of truth for all exercises in this course.
