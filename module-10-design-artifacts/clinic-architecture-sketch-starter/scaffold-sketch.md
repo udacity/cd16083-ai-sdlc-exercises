@@ -1,6 +1,6 @@
 # Direction scaffold: an architecture sketch for Cedar Clinic
 
-The Context is the same as in `scaffold-stories.md`. The example part, the evaluation criteria, and two
+The Context describes the clinic, as `scenario-brief.md` does. The example part, the evaluation criteria, and two
 constraints are written for you. You finish three constraints, then select everything below the
 line, paste it into a new chat with your AI assistant, and send it.
 

@@ -6,11 +6,11 @@ Every prompt used in this module's demo videos, in the order it was pasted into 
 
 # Demo 1: Four questions, one team, one week
 
-No live prompt. The demo reads the ILT Lab 1 files (workflow-narrative.md and the Lab 1 worksheet).
+No live prompt. The demo reads `workflow-narrative.md` and the worksheet.
 
 # Demo 2: Sam's prompt against a direction
 
-Workspace folder: map-workflow-to-principles (ILT Lab 1 files: team-prompts.md, release-checklist-team.md, scaffold.md).
+Files: team-prompts.md, release-checklist-team.md, scaffold.md.
 
 **Sam's original prompt** (shown, not run; from team-prompts.md, step 7):
 

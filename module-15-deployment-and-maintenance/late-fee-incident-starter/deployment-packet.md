@@ -1,4 +1,4 @@
-# Deployment packet: a late fee charged a day early (Challenge 2)
+# Deployment packet: a late fee charged a day early
 
 Suppose pull request #412 was corrected to `> 30` and merged on October 8. This packet is what the on-call engineer gathered on the morning of October 20, after a support ticket. Six sections. Nothing else is known.
 

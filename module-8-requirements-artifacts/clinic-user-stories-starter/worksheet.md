@@ -1,7 +1,7 @@
-# Lab 2 worksheet: generate and evaluate early-phase artifacts
+# Worksheet: generate and evaluate early-phase artifacts
 Your name:
 
-Fill this in as the lab guide directs. Keep `scenario-brief.md` open beside this worksheet; you will go back to it for every part. The two artifacts you evaluate, both checklists, and the policy lines you need are printed here where you use them. Do not open anything in `solutions/` until the lab guide says to.
+Keep `scenario-brief.md` open beside this worksheet; you will go back to it for every part. The artifacts you evaluate, the checklists, and the policy lines you need are printed here where you use them.
 
 ## Part A. The supplied stories against the requirements checklist
 
@@ -89,13 +89,11 @@ Count. Your Part A verdicts for these same three questions (rows 1, 4, and 6 of 
 
 ## Part F. Written assessment
 
-Who reviews: stories go to **the practice manager**, who owns the clinic's rules and data. Sketches go to **the vendor's architect**, who takes any question about the clinic to the practice manager.
+Who reviews: stories go to **the practice manager**, who owns the clinic's rules and data.
 
-Fill the table one row at a time, left to right, and finish the row before starting the next one. Each row names the one Part to look in. The first yes/no column comes from the verdicts you wrote there: does the artifact fail an item you scored? The second is answered by looking at what you pasted there: is there an "Assumptions to confirm" section with at least one item? The supplied artifacts have none, so their second column is filled in. The fifth column names what decided the row: the number of any item that failed in that Part (one is enough), or, if no item failed, the number of the first assumption in the pasted list. One number, read from the Part you are already looking at. The verdict follows: **reliable as written** only if both answers are no; otherwise **needs human review**. A directed output that lands in "needs human review" has not failed; its assumptions are the list of questions for the clinic.
+Fill the table one row at a time, left to right, and finish the row before starting the next one. Each row names the one Part to look in. The first yes/no column comes from the verdicts you wrote there: does the artifact fail an item you scored? The second is answered by looking at what you pasted there: is there an "Assumptions to confirm" section with at least one item? The supplied stories have none, so their second column is filled in. The fifth column names what decided the row: the number of any item that failed in that Part (one is enough), or, if no item failed, the number of the first assumption in the pasted list. One number, read from the Part you are already looking at. The verdict follows: **reliable as written** only if both answers are no; otherwise **needs human review**. A directed output that lands in "needs human review" has not failed; its assumptions are the list of questions for the clinic.
 
 | Artifact | Where to look | Fails an item you scored? (yes/no) | Has an "Assumptions to confirm" section? (yes/no) | The item or assumption that decided it (one number) | Verdict |
 |---|---|---|---|---|---|
 | The supplied stories | Part A | | no | item ____ | |
-| The supplied sketch | Part B | | no | item ____ | |
 | Your stories | Part D | | | item ____ or assumption ____ | |
-| Your sketch | Part E | | | item ____ or assumption ____ | |

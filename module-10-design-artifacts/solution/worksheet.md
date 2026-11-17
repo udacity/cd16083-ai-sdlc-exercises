@@ -1,7 +1,7 @@
-# Lab 2 worksheet: generate and evaluate early-phase artifacts
+# Worksheet: generate and evaluate early-phase artifacts
 Your name:
 
-Fill this in as the lab guide directs. Keep `scenario-brief.md` open beside this worksheet; you will go back to it for every part. The two artifacts you evaluate, both checklists, and the policy lines you need are printed here where you use them. Do not open anything in `solutions/` until the lab guide says to.
+Keep `scenario-brief.md` open beside this worksheet; you will go back to it for every part. The artifacts you evaluate, the checklists, and the policy lines you need are printed here where you use them.
 
 ## Part B. The supplied sketch against the design checklist
 
@@ -53,7 +53,7 @@ The vendor architect's sketch, as pasted into the proposal (the same text is in 
 
 A modular monolith is a reasonable starting point for a three-site clinic. The service boundaries above can be split out later if needed.
 
-Same method as Part A: pass or fail, the part of the sketch or the gap, a few words why. Item 2 is done for you as the example.
+Score each item the same way: pass or fail, the part of the sketch or the gap, and a few words why. Item 2 is done for you as the example.
 
 | # | Question, and what a "no" looks like | Pass or fail | Part of the sketch, or the gap | Why, in a few words |
 |---|---|---|---|---|
@@ -139,7 +139,7 @@ Score your sketch on two of the design-checklist questions from Part B, items 1 
 
 Audit-log check: this sketch's audit log records "who changed what", with no stored values, so the reason for visit stays in its restricted table. The earlier recorded sketch that Part H builds on records "the old and new values" of every change, which puts the reason for visit into the audit log as well.
 
-## Part H. Challenge 2: an alternative sketch and a decision record
+## Part H. An alternative sketch and a decision record
 
 The assistant's alternative sketch and its list of assumptions:
 
@@ -167,7 +167,7 @@ Shared by both sketches:
 6. The clinic accepts a pause in online booking when the practice-management system is down.
 7. How long the audit log is kept is not decided.
 8. Someone at the clinic or a contractor can run and patch a web service.
-(Abridged; the full answer is transcripts/challenge-2-alternative-sketch.md)
+(Abridged.)
 ```
 
 | Field | Your entry |

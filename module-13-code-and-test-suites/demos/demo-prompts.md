@@ -10,7 +10,7 @@ No live prompt. The demo reads the case file and the worksheet. The AI review it
 
 # Demo 2: A test written from the rule
 
-Workspace folder: ledgerline-billing (the ILT challenge1-repo).
+Workspace folder: ledgerline-billing (the Ledgerline billing project at pull request #412).
 
 **Prompt 1: a test from the criterion.**
 

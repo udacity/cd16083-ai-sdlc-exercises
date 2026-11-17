@@ -1,6 +1,6 @@
 # Release checklist: renewal reminder emails
 
-This is what the assistant returned to Sam in step 7, exactly as he pasted it into the release ticket. He gave it one sentence and nothing about Alder Box's systems. (Recorded 2026-10-11, Claude Sonnet 5.5 in GitHub Copilot Chat. Your own run will differ.)
+This is what the assistant returned to Sam in step 7, exactly as he pasted it into the release ticket. He gave it one sentence and nothing about Alder Box's systems. Your own run will differ.
 
 # Release Checklist: Subscription Renewal Reminder Emails
 

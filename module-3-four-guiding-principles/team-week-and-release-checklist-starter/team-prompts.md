@@ -1,9 +1,9 @@
 # The team's prompts
 
-Open this file only when the lab guide tells you to, after you have run your own scaffold.
+Open this file only when the worksheet tells you to, after you have run your own scaffold.
 
 These are the prompts the Alder Box team typed, one per workflow step. Each is reproduced as typed.
-Steps 6 and 8 have no prompt. The full answers are in the `transcripts` folder.
+Steps 6 and 8 have no prompt.
 
 ## Step 1. Priya, Monday 9:10 am
 
