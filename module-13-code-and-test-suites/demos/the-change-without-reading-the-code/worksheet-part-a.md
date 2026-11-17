@@ -1,4 +1,4 @@
-# Lab 3 worksheet: evaluate delivery artifacts and assess responsible use
+# Worksheet: evaluate delivery artifacts and assess responsible use
 
 ## Part A. The change, without reading the code
 

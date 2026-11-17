@@ -1,14 +1,12 @@
-# Lab 3 worksheet: evaluate delivery artifacts and assess responsible use
+# Worksheet: evaluate delivery artifacts and assess responsible use
 Your name:
-
-Fill this in as the lab guide directs. Keep `case-file.md` open beside this worksheet; every Part sends you back to it. The three things you evaluate (the fee table and list of changed files, the test file, and the pipeline file) and every checklist question are printed here where you use them. Do not open anything in `solutions/` until the lab guide says to.
 
 Pass or fail, throughout: a row passes only when its own "pass when" sentence is true. Write what you found first; the verdict follows from it.
 
 
-## Part H. Challenge 2: an environment-specific defect
+## Part H. An environment-specific defect
 
-Fill this in as Challenge 2 in the lab guide directs. Keep `deployment-packet.md` open beside this worksheet. Suppose the pull request was corrected and merged; the packet is what the on-call engineer gathered twelve days later.
+Keep `deployment-packet.md` open beside this worksheet. Suppose the pull request was corrected and merged; the packet is what the on-call engineer gathered twelve days later.
 
 **H1. Four facts from the packet.** One row at a time: open the section the row names and fill both environments from it before the next row.
 

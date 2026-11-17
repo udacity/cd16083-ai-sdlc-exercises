@@ -13,7 +13,7 @@ and send it.
 - Under *What to produce*, write one line, for example: "Using the context, constraints, example,
   and evaluation criteria below, write the release checklist for this change."
 
-Do not open `team-prompts.md` until the lab guide tells you to.
+Do not open `team-prompts.md` until the worksheet tells you to.
 
 ---------- Everything below this line is what you paste ----------
 

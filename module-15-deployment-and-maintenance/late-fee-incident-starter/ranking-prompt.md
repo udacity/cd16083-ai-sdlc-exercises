@@ -1,4 +1,4 @@
-# Challenge 2 prompt: rank the root causes
+# Prompt: rank the root causes
 
 Paste everything below the line into a new chat. The packet is included; there is nothing to fill in.
 
@@ -6,7 +6,7 @@ Paste everything below the line into a new chat. The packet is included; there i
 
 Below is a packet about a billing defect: a late fee is applied one day early in production and not in staging. Under the heading "Hypotheses", list the possible root causes, ranked from most to least likely. For each one, name the item in the packet that would disprove it, and say whether the packet does disprove it. Use only what is in the packet. If something you would need is missing, list it under the heading "Missing". Then, under the heading "Plan", give the smallest change that stops the early fees and say how to undo it.
 
-# Deployment packet: a late fee charged a day early (Challenge 2)
+# Deployment packet: a late fee charged a day early
 
 Suppose pull request #412 was corrected to `> 30` and merged on October 8. This packet is what the on-call engineer gathered on the morning of October 20, after a support ticket. Six sections. Nothing else is known.
 

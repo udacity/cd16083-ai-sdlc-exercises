@@ -1,7 +1,7 @@
-# Lab 2 worksheet: generate and evaluate early-phase artifacts
+# Worksheet: generate and evaluate early-phase artifacts
 Your name:
 
-Fill this in as the lab guide directs. Keep `scenario-brief.md` open beside this worksheet; you will go back to it for every part. The two artifacts you evaluate, both checklists, and the policy lines you need are printed here where you use them. Do not open anything in `solutions/` until the lab guide says to.
+Keep `scenario-brief.md` open beside this worksheet; you will go back to it for every part. The artifacts you evaluate, the checklists, and the policy lines you need are printed here where you use them.
 
 ## Part B. The supplied sketch against the design checklist
 
@@ -53,7 +53,7 @@ The vendor architect's sketch, as pasted into the proposal (the same text is in 
 
 A modular monolith is a reasonable starting point for a three-site clinic. The service boundaries above can be split out later if needed.
 
-Same method as Part A: pass or fail, the part of the sketch or the gap, a few words why. Item 2 is done for you as the example.
+Score each item the same way: pass or fail, the part of the sketch or the gap, and a few words why. Item 2 is done for you as the example.
 
 | # | Question, and what a "no" looks like | Pass or fail | Part of the sketch, or the gap | Why, in a few words |
 |---|---|---|---|---|
@@ -79,7 +79,7 @@ Score your sketch on two of the design-checklist questions from Part B, items 1 
 | 1 | Is the practice-management system still the record, with the write and its failure described? | Find the part that writes to it. Find the sentence that says what happens when the write fails. Pass when both are there. | | part ____ ; failed write: described / not described |
 | 3 | Is the reason for visit named, with where it is stored and who may read it? | Find "reason for visit". Is there a place and a "who"? Pass when both are stated. | | stored in ____ ; read by ____ |
 
-## Part H. Challenge 2: an alternative sketch and a decision record
+## Part H. An alternative sketch and a decision record
 
 The assistant's alternative sketch and its list of assumptions:
 

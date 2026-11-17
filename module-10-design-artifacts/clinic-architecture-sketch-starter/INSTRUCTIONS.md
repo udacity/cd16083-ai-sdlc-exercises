@@ -19,6 +19,7 @@ The completed `worksheet.md`, Parts B, E and H, including the audit-log check.
 - `architecture-sketch-supplied.md`: the vendor's sketch
 - `design-checklist.md`: the four questions you score with
 - `scaffold-sketch.md`: the direction you complete and run
+- `user-stories-supplied.md`: the vendor's user stories, for the last row of the failure-mode table
 - `worksheet.md`: your answers
 
 ## Tools

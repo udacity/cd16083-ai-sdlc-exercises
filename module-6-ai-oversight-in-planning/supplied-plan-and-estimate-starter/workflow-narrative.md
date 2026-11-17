@@ -27,8 +27,7 @@ On Monday morning a customer writes to support:
 > I'd have cancelled if I'd had a heads-up.
 
 What follows is what the team did with it, step by step. The quotes are taken word for word from
-the assistant's answers, which are in the `transcripts` folder. The prompts are in `team-prompts.md`;
-open it only when the lab tells you to.
+the assistant's answers.
 
 ---
 
@@ -100,8 +99,7 @@ ABX-212. The pull request is merged at 6:52 pm.
 
 Sam types one sentence: a release checklist for a feature that sends renewal reminder emails.
 
-The assistant returns about sixty items in eight sections. It is in `release-checklist-team.md`,
-and you will evaluate it as it stands. Sam pastes it into the release ticket and works through it
+The assistant returns about sixty items in eight sections. Sam pastes it into the release ticket and works through it
 over two days, ticking items as he goes.
 
 One item is "Database migrations applied". Marcus had added the new column to his own machine by
@@ -125,4 +123,4 @@ three days."
 
 ---
 
-*End of narrative. Go back to the lab guide.*
+*End of narrative.*

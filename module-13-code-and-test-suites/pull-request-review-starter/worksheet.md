@@ -1,7 +1,7 @@
-# Lab 3 worksheet: evaluate delivery artifacts and assess responsible use
+# Worksheet: evaluate delivery artifacts and assess responsible use
 Your name:
 
-Fill this in as the lab guide directs. Keep `case-file.md` open beside this worksheet; every Part sends you back to it. The three things you evaluate (the fee table and list of changed files, the test file, and the pipeline file) and every checklist question are printed here where you use them. Do not open anything in `solutions/` until the lab guide says to.
+Keep `case-file.md` open beside this worksheet; every Part sends you back to it. The two things you evaluate (the fee table and list of changed files, and the test file) and every checklist question are printed here where you use them.
 
 Pass or fail, throughout: a row passes only when its own "pass when" sentence is true. Write what you found first; the verdict follows from it.
 
@@ -147,10 +147,10 @@ Three questions, answered from what is already in this worksheet and the case fi
 | Question | Where to look | Answer |
 |---|---|---|
 | Did any of rows 1 to 3 in Part A fail? | Part A of this worksheet | yes / no |
-| If you clicked Merge now, would the fee at 30 days reach customers? | Part C rows 2 and 4 of this worksheet, and the last paragraph of section 3 of `case-file.md` | yes / no |
+| If you clicked Merge now, would the fee at 30 days reach customers? | The last paragraph of section 3 of `case-file.md`: what happens after someone clicks Merge | yes / no |
 | Has the change reached customers already? | The first paragraph of `case-file.md` | yes / no |
 
-Decision, keep one and delete the other: merge / defer. Rollback is for a change that has already reached customers; your third answer says whether this one has. Challenge 2 is that case.
+Decision, keep one and delete the other: merge / defer. Rollback is for a change that has already reached customers; your third answer says whether this one has.
 
 Reasoning, two or three sentences: the row in Part A, B, or C that decides it, and what has to be true before this change merges.
 

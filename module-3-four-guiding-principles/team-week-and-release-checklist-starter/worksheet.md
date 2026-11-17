@@ -1,13 +1,13 @@
-# Lab 1 worksheet: map an AI-assisted workflow to the guiding principles
+# Worksheet: map an AI-assisted workflow to the guiding principles
 Your name:
 
-Fill this in as the lab guide directs. Keep `workflow-narrative.md` open beside this file; you will go back to it for every row. Do not open `team-prompts.md` or anything in `solutions/` until the lab guide says to.
+Keep `workflow-narrative.md` open beside this file; you will go back to it for every row. Do not open `team-prompts.md` until Part E asks for it.
 
 ## Part A. Principles map
 
 Two rules. You are judging the team's handling of each step, not the person who acted. The step where a check was skipped gets the mark, not the step where the consequence showed up.
 
-**First, the facts.** Pick from the lists. Workflow step 1 is done as the model. You do steps 2, 3, 6, and 7; the debrief covers the rest.
+**First, the facts.** Pick from the lists. Workflow step 1 is done as the model, and steps 2 and 3 are worked in the first demo video. You do steps 6 and 7.
 
 What was the output checked against? Pick one: **the email** · **the customer** · **the ticket comment** · **an AI output** (say which: the story's criteria, the code, the tests, or the description) · **nothing**
 
@@ -72,7 +72,7 @@ Score your checklist against the three evaluation criteria in `scaffold.md`, the
 
 Now open `team-prompts.md` and read Sam's prompt for workflow step 7, the release checklist. In one sentence: what did your direction give the assistant that his did not?
 
-## Part F. Challenge 1: a direction from scratch, and your own workflow
+## Part F. Optional: a direction from scratch, and your own workflow
 
 Your direction for the reply email to the customer:
 
