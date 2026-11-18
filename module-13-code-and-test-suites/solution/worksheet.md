@@ -1,7 +1,7 @@
 # Worksheet: evaluate delivery artifacts and assess responsible use
 Your name:
 
-Keep `case-file.md` open beside this worksheet; every Part sends you back to it. The two things you evaluate (the fee table and list of changed files, and the test file) and every checklist question are printed here where you use them.
+Keep `case-file.md` open beside this worksheet; every Part sends you back to it. The three things you evaluate (the fee table and list of changed files, the test file, and the pipeline file) and every checklist question are printed here where you use them.
 
 Pass or fail, throughout: a row passes only when its own "pass when" sentence is true. Write what you found first; the verdict follows from it.
 
@@ -100,6 +100,45 @@ Four test-quality questions. Each row says which test to find and when it passes
 
 Count. The tests pass 4 of 4. How many of the four would fail if the code charged no fee at 30 days, as the acceptance criterion says? 1 (`test_fee_at_30_days`) (A test that fails on correct code is written from the code, not from the rule.)
 
+## Part C. The pipeline
+
+The pipeline file, `ci.yml`, as it is in the pull request. A **pipeline** is the set of automated steps that run when code changes. This one has two jobs: **test** runs the tests, and **deploy** waits for test and then puts the change into production, where customers use it. A **secret** is a password or key the pipeline needs; it belongs in the pipeline's secret store, never in a file.
+
+```yaml
+name: billing-service
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -r requirements.txt
+      - run: pytest
+        continue-on-error: true
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    env:
+      DEPLOY_API_KEY: "sk-live-PLACEHOLDER-not-a-real-key"
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./deploy.sh production
+```
+
+Four pipeline questions. Each row says which line to find and when it passes. Row 1 is done for you.
+
+| # | Question, and what a "no" looks like | Find | Pass when | What you found | Pass or fail |
+|---|---|---|---|---|---|
+| 1 | Does the pipeline run the tests? | The line `run: pytest` | It exists | `run: pytest` | pass |
+| 2 | Does a failing test stop the deploy? A no: the test step is told to carry on after a failure. | The line directly under `run: pytest` | That line is not `continue-on-error: true` | The line, copied: `continue-on-error: true` | fail |
+| 3 | Are secrets kept out of the file? A no: a key or password written in the file. | A line containing `KEY` or `PASSWORD` with a value in quotes | No such line | The line, copied: `DEPLOY_API_KEY: "sk-live-PLACEHOLDER-not-a-real-key"` | fail |
+| 4 | Does a person approve a production deploy? A no: the deploy job names no environment, so nothing waits for a person and the deploy runs on every push to main. | A line `environment:` under the deploy job. (`env:` is a different thing: a list of variables.) | The deploy job names an environment, such as `environment: production`. The people who approve it are set in the repository's settings, not in this file. | The line, copied: none | fail |
+
 ## Part D. The AI review
 
 Paste the assistant's answer between the two lines:
@@ -149,7 +188,7 @@ Three questions, answered from what is already in this worksheet and the case fi
 | Question | Where to look | Answer |
 |---|---|---|
 | Did any of rows 1 to 3 in Part A fail? | Part A of this worksheet | yes |
-| If you clicked Merge now, would the fee at 30 days reach customers? | The last paragraph of section 3 of `case-file.md`: what happens after someone clicks Merge | yes |
+| If you clicked Merge now, would the fee at 30 days reach customers? | Part C rows 2 and 4 of this worksheet, and the last paragraph of section 3 of `case-file.md` | yes |
 | Has the change reached customers already? | The first paragraph of `case-file.md` | no |
 
 Decision, keep one and delete the other: defer. Rollback is for a change that has already reached customers; your third answer says whether this one has.
